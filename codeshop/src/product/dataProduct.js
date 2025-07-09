@@ -1,6 +1,6 @@
 import cpp from '../assets/cpp.png';
 import golang from '../assets/golang.png';
-import java from '../assets;java.png';
+import java from '../assets/java.png';
 import javascript from '../assets/javascript.png';
 import python from '../assets/python.png';
 import rust from '../assets/rust.png';
