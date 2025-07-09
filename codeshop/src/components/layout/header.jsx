@@ -5,13 +5,13 @@ import ProductList from "../../product/productList";
 
 export default function Header(){
     return (
-        <header>
-            <nav>
-                <section>
-                    <icon>
-                        <HiAcademicCap />
+        <header className="w-full">
+            <nav className="w-full h-[15vh] flex flex-row justify-between items-center px-8 border-b border-gray-200">
+                <section className="flex flex-row items-center gap-3">
+                    <icon className=''>
+                        <HiAcademicCap size={32}/>
                     </icon>
-                    <h2>CodeShop</h2>
+                    <h2 className="text-xl font-bold">CodeShop</h2>
                 </section>
                 
                 <SearchBar />
