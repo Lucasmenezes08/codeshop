@@ -19,7 +19,7 @@ export default function Header(){
             </nav>
 
             <section className="flex flex-row-reverse w-full justify-between">
-                <section className="w-[72%] flex flex-col justify-center">
+                <section className="w-[75%] flex flex-col justify-center px-5">
                     <section>
                         <section className="flex flex-col mt-[3rem] gap-2 px-5">
                             <h2 className="text-3xl font-extrabold">Visualize as linguagens a sua disposição!</h2>
