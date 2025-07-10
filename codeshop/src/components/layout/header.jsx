@@ -37,7 +37,7 @@ export default function Header(){
 
                 </section>
                 
-                <section className="px-5 mt-[4.5rem]">
+                <section className="px-5 mt-[3.5rem]">
                     <Filter />
                 </section>
 

@@ -25,24 +25,24 @@ export default function Filter (){
     }
     
     return (
-        <section className='w-[18vw]'>
-            <h3>
+        <section className='w-[18vw] px-3 flex flex-col items-start justify-center '>
+            <h3 className='text-lg font-bold py-2'>
                 Filters
             </h3>
             <section>
-                <p>Categorias</p>
+                <p className='font-light pb-4 pt-3'>Categorias</p>
                 <Autocomplete 
                     disablePortal
                     options={listData}
-                    sx={{width: 230}}
+                    sx={{width: 235}}
                     renderInput={(params) => <TextField {...params} label='Tópicos' size="small"/>}
                 />
             </section>
 
-            <section>
-                <p>Faixa de preço</p>
+            <section className='py-6'>
+                <p className='pb-2 font-light'>Faixa de preço</p>
 
-                <section>
+                <section className='flex flex-col justify-center'>
 
                     <Slider 
                         getAriaLabel={() => 'Temperature range'}
@@ -52,17 +52,17 @@ export default function Filter (){
                         onChange={handleChange}
                         valueLabelDisplay="auto"
                         getAriaValueText={formatValue}
-                        sx={{width: 200}}
+                        sx={{width: 230}}
                     />
                     <section className='flex flex-row justify-between'>
-                        <p>R$ {minValue}</p>
-                        <p>R$ {maxValue} +</p>
+                        <p className='text-sm font-light'>R$ {minValue}</p>
+                        <p className='text-sm font-light'>R$ {maxValue} +</p>
                     </section>
                 </section>
                 
             </section>
 
-            <button>Limpar filtro</button>
+            <button className='w-60 h-8 bg-gray-200 rounded-sm font-semibold flex justify-center items-center cursor-pointer hover:bg-gray-300'>Limpar filtro</button>
         </section>
     )
 }
