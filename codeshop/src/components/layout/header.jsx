@@ -2,6 +2,7 @@ import { HiAcademicCap } from "react-icons/hi";
 import SearchBar from "../../product/searchBar";
 import Topics from "./topics";
 import ProductList from "../../product/productList";
+import Filter from "../../features/filter/filter";
 
 export default function Header(){
     return (
@@ -17,14 +18,33 @@ export default function Header(){
                 <SearchBar />
             </nav>
 
-            <section className="flex flex-col mt-[3rem] gap-2 px-5">
-                <h2 className="text-3xl font-extrabold">Visualize as linguagens a sua disposição!</h2>
-                <p className="font-light">Fique a vontade para conferir as linguagens mais presentes em todo o mercado de programação</p>
+            <section className="flex flex-row-reverse w-full justify-between">
+                <section className="w-[72%] flex flex-col justify-center">
+                    <section>
+                        <section className="flex flex-col mt-[3rem] gap-2 px-5">
+                            <h2 className="text-3xl font-extrabold">Visualize as linguagens a sua disposição!</h2>
+                            <p className="font-light">Fique a vontade para conferir as linguagens mais presentes em todo o mercado de programação</p>
+                        </section>
+
+                        <search>
+                            <Topics />
+                        </search>
+                    </section>
+
+                    <section>
+                        <ProductList />
+                    </section>
+
+                </section>
+                
+                <section className="px-5 mt-[4.5rem]">
+                    <Filter />
+                </section>
+
             </section>
 
-            <search>
-                <Topics />
-            </search>
+           
+
         </header>
 
 
