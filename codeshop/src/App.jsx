@@ -6,10 +6,10 @@ import ProductList from './product/productList'
 function App() {
 
   return (
-    <>
+    <section className='font-sans'>
         <Header />
         <ProductList/>
-    </>
+    </section>
   )
 }
 

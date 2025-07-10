@@ -6,7 +6,7 @@ import ProductList from "../../product/productList";
 export default function Header(){
     return (
         <header className="w-full">
-            <nav className="w-full h-[15vh] flex flex-row justify-between items-center px-8 border-b border-gray-200">
+            <nav className="w-full h-[15vh] bg-white flex flex-row justify-between items-center px-8 border-b border-gray-200">
                 <section className="flex flex-row items-center gap-3">
                     <icon className=''>
                         <HiAcademicCap size={32}/>
@@ -17,9 +17,9 @@ export default function Header(){
                 <SearchBar />
             </nav>
 
-            <section>
-                <h2>Visualize as linguagens a sua disposição!</h2>
-                <p>Fique a vontade para conferir as linguagens mais presentes em todo o mercado de programação</p>
+            <section className="flex flex-col mt-[3rem] gap-2 px-5">
+                <h2 className="text-3xl font-extrabold">Visualize as linguagens a sua disposição!</h2>
+                <p className="font-light">Fique a vontade para conferir as linguagens mais presentes em todo o mercado de programação</p>
             </section>
 
             <search>
