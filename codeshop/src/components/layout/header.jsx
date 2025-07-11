@@ -4,13 +4,15 @@ import Topics from "./topics";
 import ProductList from "../../product/productList";
 import Filter from "../../features/filter/filter";
 import DarkTheme from "./darkTheme";
-import { DarkProvider } from "../../store/darkContext";
+import { useContext } from "react";
+import { DarkContext } from "../../store/darkContext";
 
 
 export default function Header(){
-    
-    return (
-        <DarkProvider>
+
+    const {atualTheme} = useContext(DarkContext);
+
+    return (      
         <header className="w-full">
             <nav className="w-full h-[15vh] bg-white flex flex-row justify-between items-center px-8 border-b border-gray-200">
                 <section className="flex flex-row items-center gap-3">
@@ -55,7 +57,7 @@ export default function Header(){
            
 
         </header>
-        </DarkProvider>
+       
 
     )
 }
