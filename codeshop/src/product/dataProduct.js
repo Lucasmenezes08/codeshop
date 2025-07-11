@@ -15,7 +15,7 @@ export const ProductData = [
         preco: 97.50,
         descricao: 
             'C++ é uma linguagem de programação de alto desempenho, criada como uma evolução da linguagem C.',
-        tags: ['all', 'backend'],
+        tags: ['Todos', 'BackEnd'],
     },
 
     {
@@ -25,7 +25,7 @@ export const ProductData = [
         preco: 85.75,
         descricao: 
             'É compilada, rápida e ideal para serviços de backend e infraestrutura de nuvem, sendo a linguagem por trás de ferramentas como Docker e Kubernetes.',
-        tags: ['all', 'backend'],
+        tags: ['Todos', 'BackEnd'],
     },
 
     {
@@ -35,7 +35,7 @@ export const ProductData = [
         preco: 49.75,
         descricao: 
             'JavaScript é a linguagem de programação essencial da web, usada para criar páginas dinâmicas e interativas que rodam diretamente no navegador do usuário.',
-        tags: ['all', 'frontend' , 'fullstack', 'backend'],
+        tags: ['Todos', 'FrontEnd' , 'FullStack', 'BackEnd'],
     },
 
     {
@@ -45,7 +45,7 @@ export const ProductData = [
         preco: 99.00,
         descricao: 
             'Java é uma linguagem de programação orientada a objetos, famosa pelo lema "escreva uma vez, rode em qualquer lugar" (Write Once, Run Anywhere).',
-        tags: ['all','fullstack', 'backend'],
+        tags: ['Todos','FullStack', 'BackEnd'],
     },
 
     {
@@ -55,7 +55,7 @@ export const ProductData = [
         preco: 88.70,
         descricao: 
             'Java é uma linguagem de programação orientada a objetos, famosa pelo lema "escreva uma vez, rode em qualquer lugar" (Write Once, Run Anywhere).',
-        tags: ['all' , 'fullstack', 'backend' , 'datascience'],
+        tags: ['Todos' , 'FullStack', 'BackEnd' , 'DataScience'],
     },
 
     {
@@ -65,7 +65,7 @@ export const ProductData = [
         preco: 120.00,
         descricao: 
             'Rust é uma linguagem de programação focada em segurança e velocidade, que oferece o desempenho de C++ sem os riscos de falhas de memória.',
-        tags: ['all' , 'backend'],
+        tags: ['Todos' , 'BackEnd'],
     },
 
     {
@@ -75,6 +75,6 @@ export const ProductData = [
         preco: 45.00,
         descricao: 
             'TypeScript é uma linguagem criada pela Microsoft que expande o JavaScript, adicionando um sistema de tipagem estática opcional.',
-        tags: ['all', 'frontend' , 'fullstack', 'backend'],
+        tags: ['Todos', 'FrontEnd' , 'FullStack', 'BackEnd'],
     },
 ] 

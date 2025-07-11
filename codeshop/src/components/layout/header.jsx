@@ -4,6 +4,7 @@ import Topics from "./topics";
 import ProductList from "../../product/productList";
 import Filter from "../../features/filter/filter";
 
+
 export default function Header(){
     return (
         <header className="w-full">

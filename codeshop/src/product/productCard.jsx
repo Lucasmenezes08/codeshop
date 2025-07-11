@@ -4,6 +4,7 @@ export default function ProductCard ({
     titulo,
     preco,
     descricao,
+    tags,
     adicionarCarrinho
 }){
     return (
