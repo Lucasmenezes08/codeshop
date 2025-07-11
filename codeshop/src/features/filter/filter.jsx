@@ -27,7 +27,7 @@ export default function Filter (){
     return (
         <section className='w-[18vw] px-3 flex flex-col items-start justify-center '>
             <h3 className='text-lg font-bold py-2'>
-                Filters
+                Filtro
             </h3>
             <section>
                 <p className='font-light pb-4 pt-3'>Categorias</p>

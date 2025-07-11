@@ -1,12 +1,16 @@
-import { HiAcademicCap } from "react-icons/hi";
+import { HiAcademicCap } from "react-icons/hi"; 
 import SearchBar from "../../product/searchBar";
 import Topics from "./topics";
 import ProductList from "../../product/productList";
 import Filter from "../../features/filter/filter";
+import DarkTheme from "./darkTheme";
+import { DarkProvider } from "../../store/darkContext";
 
 
 export default function Header(){
+    
     return (
+        <DarkProvider>
         <header className="w-full">
             <nav className="w-full h-[15vh] bg-white flex flex-row justify-between items-center px-8 border-b border-gray-200">
                 <section className="flex flex-row items-center gap-3">
@@ -16,7 +20,11 @@ export default function Header(){
                     <h2 className="text-xl font-bold">CodeShop</h2>
                 </section>
                 
-                <SearchBar />
+                <section className="flex flex-row items-center justify-center gap-5 ">
+                    <SearchBar />
+                    <DarkTheme />
+                </section>
+                
             </nav>
 
             <section className="flex flex-row-reverse w-full justify-between">
@@ -47,7 +55,7 @@ export default function Header(){
            
 
         </header>
-
+        </DarkProvider>
 
     )
 }
