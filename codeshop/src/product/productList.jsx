@@ -2,10 +2,14 @@ import { useContext } from "react";
 import { ProductData } from "./dataProduct";
 import ProductCard from "./productCard";
 import { TopicContext } from "../store/topicContext";
+import { CartContext } from "../store/cartContext";
 
 
-export default function ProductList ({adicionarCarrinho}){
 
+
+export default function ProductList (){
+    
+    const {state , cart} = useContext(CartContext);
     const {topicoAtual} = useContext(TopicContext);
     const produtosTagAtual = ProductData.filter((value) => {
         if (topicoAtual === 'Todos'){
@@ -20,7 +24,7 @@ export default function ProductList ({adicionarCarrinho}){
             <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-15">
                 {produtosTagAtual.map((item) => (
                     <li key={item.id}>
-                        <ProductCard {...item} adicionarCarrinho={adicionarCarrinho}/>
+                        <ProductCard {...item}/>
                     </li>
                 ))}
             </ul>
