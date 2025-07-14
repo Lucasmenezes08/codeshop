@@ -21,7 +21,7 @@ export default function ProductCard ({
             </section>
             <section className=" w-full flex flex-row justify-between items-center px-6 py-8 ">
                 <p className="text-sky-500 font-semibold text-2xl">R$ {preco}</p>
-                <button className="w-[6rem] h-[3rem] font-semibold rounded-2xl bg-sky-500 text-white items-center cursor-pointer hover:bg-sky-600" onClick={() => cart({type: 'adicionarCarrinho', payload: {id , imagem , preco }})}>Comprar</button>
+                <button className="w-[6rem] h-[3rem] font-semibold rounded-2xl bg-sky-500 text-white items-center cursor-pointer hover:bg-sky-600" onClick={() => cart({type: 'adicionarCarrinho', payload: {id , imagem , preco , quantidade: 1}})}>Comprar</button>
             </section>
         </section>
     )
