@@ -3,6 +3,7 @@ export default function CartModalContent ({
     id ,
     imagem,
     preco,
+    quantidade
 }){
     return (
         <section className="flex items-center gap-4 border-b p-2 hover:bg-gray-300 transition ease-in-out cursor-pointer">
@@ -17,6 +18,10 @@ export default function CartModalContent ({
                 <h2 className="font-bold">{id}</h2>
                 <p className="text-gray-600">R$ {preco}</p>
             </section>
+            
+            <span className="font-semibold">
+                x {quantidade}
+            </span>
 
             <button className="text-sm text-red-500 hover:underline cursor-pointer">
                 Remover item
