@@ -14,7 +14,8 @@ export default function Header(){
 
     return (      
         <header className="w-full">
-            <nav className="w-full h-[15vh] bg-white flex flex-row justify-between items-center px-8 border-b border-gray-200">
+            <nav className={`w-full h-[15vh] flex flex-row justify-between items-center px-8 border-b 
+            ${ atualTheme === 'light' ? 'bg-white  border-gray-200' : 'bg-zinc-950 text-white border-gray-200'}`}>
                 <section className="flex flex-row items-center gap-3">
                     <icon className=''>
                         <HiAcademicCap size={32}/>
@@ -24,12 +25,13 @@ export default function Header(){
                 
                 <section className="flex flex-row items-center justify-center gap-5 ">
                     <SearchBar />
-                    <DarkTheme />
+                   <DarkTheme />
                 </section>
                 
             </nav>
 
-            <section className="flex flex-row-reverse w-full justify-between">
+            <section className={`flex flex-row-reverse w-full justify-between 
+                ${atualTheme === 'light'? '' : 'bg-zinc-900 text-white'}`}>
                 <section className="w-[75%] flex flex-col justify-center px-5">
                     <section>
                         <section className="flex flex-col mt-[3rem] gap-2 px-5">
