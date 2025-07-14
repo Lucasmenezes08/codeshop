@@ -29,7 +29,7 @@ const reducer = (state , action) => {
         case 'removerCarrinho':
             return {
                 ...state,
-                items: state.items = state.items.filter((item) => item.id !== action.payload)
+                items: state.items.filter((item) => item.id !== action.payload)
             }
             
         default:

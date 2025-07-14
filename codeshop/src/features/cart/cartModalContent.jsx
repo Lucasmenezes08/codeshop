@@ -1,3 +1,5 @@
+import { useContext } from "react"
+import { CartContext } from "../../store/cartContext"
 
 export default function CartModalContent ({
     id ,
@@ -5,6 +7,8 @@ export default function CartModalContent ({
     preco,
     quantidade
 }){
+
+    const {cart} = useContext(CartContext)
     return (
         <section className="flex items-center gap-4 border-b p-2 hover:bg-gray-300 transition ease-in-out cursor-pointer">
             <img
@@ -23,7 +27,7 @@ export default function CartModalContent ({
                 x {quantidade}
             </span>
 
-            <button className="text-sm text-red-500 hover:underline cursor-pointer">
+            <button className="text-sm text-red-500 hover:underline cursor-pointer" onClick={() => cart({type:'removerCarrinho', payload: id})}>
                 Remover item
             </button>
         </section>
