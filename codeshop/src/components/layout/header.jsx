@@ -6,14 +6,15 @@ import Filter from "../../features/filter/filter";
 import DarkTheme from "./darkTheme";
 import { useContext } from "react";
 import { DarkContext } from "../../store/darkContext";
-import CartButton from "./cartButton";
+import Cart from "../../features/cart/cart";
+import { CartContext } from "../../store/cartContext";
+
 
 
 export default function Header(){
-
     const {atualTheme} = useContext(DarkContext);
 
-    return (      
+    return (     
         <header className="w-full">
             <nav className={`w-full h-[15vh] flex flex-row justify-between items-center px-8 border-b 
             ${ atualTheme === 'light' ? 'bg-white  border-gray-200' : 'bg-zinc-950 text-white border-gray-200'}`}>
@@ -27,7 +28,7 @@ export default function Header(){
                 <section className="flex flex-row items-center justify-center gap-5 ">
                     <SearchBar />
                    <DarkTheme />
-                   <CartButton />
+                   <Cart/>
                 </section>
                 
             </nav>
@@ -47,7 +48,7 @@ export default function Header(){
                     </section>
 
                     <section>
-                        <ProductList />
+                        <ProductList/>
                     </section>
 
                 </section>
@@ -61,7 +62,6 @@ export default function Header(){
            
 
         </header>
-       
 
     )
 }
