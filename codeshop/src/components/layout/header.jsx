@@ -6,6 +6,7 @@ import Filter from "../../features/filter/filter";
 import DarkTheme from "./darkTheme";
 import { useContext } from "react";
 import { DarkContext } from "../../store/darkContext";
+import CartButton from "./cartButton";
 
 
 export default function Header(){
@@ -26,6 +27,7 @@ export default function Header(){
                 <section className="flex flex-row items-center justify-center gap-5 ">
                     <SearchBar />
                    <DarkTheme />
+                   <CartButton />
                 </section>
                 
             </nav>
