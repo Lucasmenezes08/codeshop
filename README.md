@@ -78,19 +78,18 @@ Como próximos passos, tenho o objetivo de:
 
 Para rodar este projeto localmente, siga os passos abaixo:
 
-1.  Abra o terminal (CMD, PowerShell, ou o terminal integrado da sua IDE) e clone o repositório:
+
+1.  Abra a IDE ou editor de código a sua escolha e crie a pasta Codeshop (Ou qualquer nome a sua escolha)
+   
+
+2.  Abra o terminal (CMD, PowerShell, ou o terminal integrado da sua IDE) e clone o repositório:
     ```bash
     git clone https://github.com/Lucasmenezes08/codeshop
     ```
 
-2.  digite o comando para abrir a pasta do projeto:
-    ```bash
-    cd codeshop
-    ```
-
 3.  digite o comando para abrir a pasta do projeto:
     ```bash
-    code . 
+    cd codeshop
     ```
 
 4.  novamente digite o comando para abrir a pasta do projeto:
