@@ -88,12 +88,23 @@ Para rodar este projeto localmente, siga os passos abaixo:
     cd codeshop
     ```
 
-3.  Instale todas as dependências necessárias:
+3.  digite o comando para abrir a pasta do projeto:
+    ```bash
+    code . 
+    ```
+
+4.  novamente digite o comando para abrir a pasta do projeto:
+    ```bash
+    cd codeshop
+    ```
+
+
+5.  Instale todas as dependências necessárias:
     ```bash
     npm install
     ```
 
-4.  Inicie o servidor de desenvolvimento:
+6.  Inicie o servidor de desenvolvimento:
     ```bash
     npm run dev
     ```
