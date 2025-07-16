@@ -59,7 +59,7 @@ Nesse aspecto:
 
 A imagem abaixo ilustra a arquitetura de componentes do projeto, mostrando o fluxo de dados (props) e o relacionamento entre eles.
 
-![Estrutura de Componentes](./codeshop/src/assets/arvore_componentes_codeshop.excalidraw)
+![Estrutura de Componentes](./codeshop/src/assets/arvore_componentes_codeshop.png)
 
 ---
 
