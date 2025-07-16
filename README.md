@@ -80,7 +80,7 @@ Para rodar este projeto localmente, siga os passos abaixo:
 
 1.  Abra o terminal (CMD, PowerShell, ou o terminal integrado da sua IDE) e clone o repositório:
     ```bash
-    git clone [https://github.com/Lucasmenezes08/codeshop](https://github.com/Lucasmenezes08/codeshop)
+    git clone https://github.com/Lucasmenezes08/codeshop
     ```
 
 2.  Navegue até o diretório do projeto:
