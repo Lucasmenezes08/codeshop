@@ -83,22 +83,17 @@ Para rodar este projeto localmente, siga os passos abaixo:
     git clone https://github.com/Lucasmenezes08/codeshop
     ```
 
-2.  Navegue até o diretório do projeto:
+2.  digite o comando para abrir a pasta do projeto:
     ```bash
     cd codeshop
     ```
 
-3.  Se você utiliza o Visual Studio Code, pode abrir o projeto com o seguinte comando:
-    ```bash
-    code .
-    ```
-
-4.  Instale todas as dependências necessárias:
+3.  Instale todas as dependências necessárias:
     ```bash
     npm install
     ```
 
-5.  Inicie o servidor de desenvolvimento:
+4.  Inicie o servidor de desenvolvimento:
     ```bash
     npm run dev
     ```
